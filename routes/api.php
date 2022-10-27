@@ -4,6 +4,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\GanttController;
 use App\Http\Controllers\TaskController;
+use App\Http\Controllers\EventController;
 
 
 /*
@@ -21,4 +22,6 @@ use App\Http\Controllers\TaskController;
  
 Route::get('/data',  [GanttController::class, 'get']);
 Route::resource('task','TaskController');
-Route::resource('link', 'LinkController');
+Route::resource('link', 'LinkController'); 
+
+ 

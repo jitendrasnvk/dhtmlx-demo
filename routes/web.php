@@ -17,6 +17,11 @@ Route::get('/', function () {
     return view('gantt');
 });
 
-Route::get('schedular',function(){
+Route::get('scheular',function(){
     return view('scheduler');
+}); 
+
+Route::get('grid', function () {
+    return view('grid');
 });
+Route::match(['get', 'post'], '/grid_data', "GridController@data");

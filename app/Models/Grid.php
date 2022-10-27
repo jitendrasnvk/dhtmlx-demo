@@ -1,0 +1,13 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class Grid extends Model
+{
+   protected $table = "scheduler_events";
+    public $primaryKey = "event_id";
+    public $timestamps = false;
+}
